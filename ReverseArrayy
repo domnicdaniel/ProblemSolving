@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n=5;
+    int arr[n]={5,4,3,2,1};
+    int left=0,right=n-1;
+    while(left<right){
+        swap(arr[left],arr[right]);
+        left++;
+        right--;
+    }
+    for(auto a:arr){
+        cout<<a<<" ";
+    }
+    return 0;
+}
